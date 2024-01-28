@@ -3,7 +3,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Light Blue Theme</title>
+  <title>Light Blue & Deep Red Theme</title>
   <style type="text/css">
     html,
     #page {
@@ -15,9 +15,9 @@
       margin: 0;
       padding: 0;
       width: 100%;
-      color: #4a4a4a;
-      font: normal 12px/2.0em Sans-Serif;
-      background-color: #e6f7ff; /* Light Blue Background */
+      color: #333; /* Dark Text Color */
+      font: normal 14px/1.6em Sans-Serif;
+      background-color: #f2f2f2; /* Light Gray Background */
     }
 
     h1,
@@ -124,7 +124,7 @@
     /* Content */
     #content-inner {
       margin: 0 auto;
-      padding: 10px 0;
+      padding: 20px 0;
       width: 970px;
       background: #fff;
     }
@@ -149,9 +149,9 @@
 
     #content #sidebar .widget {
       margin: 0 0 12px;
-      padding: 8px 8px 8px 13px;
-      line-height: 1.4em;
-      background-color: #e6f7ff; /* Light Blue Widget Background */
+      padding: 15px;
+      line-height: 1.6em;
+      background-color: #f2f2f2; /* Light Gray Widget Background */
     }
 
     #content #sidebar .widget h3 a {
@@ -162,7 +162,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      color: #4a4a4a;
+      color: #333; /* Dark Text Color */
     }
 
     #content #sidebar .widget ul li {
@@ -170,15 +170,13 @@
     }
 
     #content #sidebar .widget ul li {
-      padding: 4px 0;
+      padding: 8px 0;
       width: 185px;
     }
 
     #content #sidebar .widget ul li a {
       color: #ff6666; /* Deep Red Link */
       text-decoration: none;
-      margin-left: -16px;
-      padding: 4px 8px 4px 16px;
     }
 
     #content #sidebar .widget ul li a:hover {
@@ -195,7 +193,7 @@
 
     #footerblurb-inner {
       margin: 0 auto;
-      width: 922px;
+      width: 970px;
       padding: 24px;
     }
 
@@ -210,13 +208,14 @@
     /* Footer */
     #footer {
       background: #fff;
+      border-top: 1px solid #ddd; /* Light Gray Border */
     }
 
     #footer-inner {
       margin: auto;
       text-align: center;
       padding: 12px;
-      width: 922px;
+      width: 970px;
     }
 
     #footer a {
@@ -239,4 +238,23 @@
         This script generates sample text for the body content. 
         You can remove this script and any reference to it. 
          ============================= */
-    var bodyText = ["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h2>Heading</h2><p>The most important moment of your life is now. The most
+    var bodyText = ["The smaller your reality, the more convinced you are that you know everything.", "If the facts don't fit the theory, change the facts.", "The past has no power over the present moment.", "This, too, will pass.", "</p><p>You will not be punished for your anger, you will be punished by your anger.", "Peace comes from within. Do not seek it without.", "<h2>Heading</h2><p>The most important moment of your life is now. The most"];
+
+    function generateText(sentenceCount) {
+      for (var i = 0; i < sentenceCount; i++)
+        document.write(bodyText[Math.floor(Math.random() * 7)] + " ")
+    }
+  </script>
+</head>
+
+<body>
+  <div id="page">
+    <header id="header">
+      <div id="header-inner">
+        <div id="logo">
+          <h1><a href="#">Cool<span>Logo</span></a></h1>
+        </div>
+        <div id="top-nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li
